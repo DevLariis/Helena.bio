@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Reset Page */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+/* Body */
+
+body {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+/* Links Menu */
+header {
+  width: 45%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+header ul {
+  margin: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin-left: 40px;
+}
+
+header ul li {
+  width: 80px;
+  height: 80px;
+  background-color: #151515;
+  border-radius: 5px;
+
+  box-shadow: 10px 10px 20px 0px #15151590;
+  border: solid 2px #f4f4f4;
+  transition: 0.3s;
+}
+header ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*  Função ao passar o mouse*/
+header ul li:hover {
+  background-color: #9b53fb;
+  box-shadow: 10px 10px 20px #9b53fb;
+  border: solid 2px #9b53fb;
+}
+header ul li a img {
+  width: 40px;
+}
+
+/* Box Profile */
+
+figure {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+}
+
+figure img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px 0px #15151590;
+  border: 2px solid #f4f4f4;
+}
+
+/* Content Information */
+figcaption {
+  width: 50%;
+  height: 85%;
+  padding: 0px 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+figcaption h1 {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+figcaption h2 {
+  background-color: #9b53fb;
+  color: #f4f4f4;
+  font-size: 1rem;
+  padding: 5px 10px;
+  width: max-content;
+  border-radius: 5px;
+}
+
+figcaption hr {
+  background-color: #151515;
+  height: 1px;
+  border: none;
+}
+figcaption h5 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+figcaption p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #15151580;
+}
+figcaption p b {
+  color: #151515;
+}
+figcaption div {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: max-content;
+  align-items: center;
+  flex-wrap: wrap;
+}
+figcaption h3 {
+  background-color: #9b53fb;
+  padding: 5px 10px;
+  color: #f4f4f4;
+  border-radius: 5px;
+}
+
+/* Responsive */
+
+@media all and (max-width: 768px) {
+  /* Body */
+
+  body {
+    flex-direction: column;
+    height: max-content;
+  }
+
+  /* Links Menu */
+
+  header {
+    display: flex;
+    height: max-content;
+    width: 85%;
+    flex-direction: column-reverse;
+  }
+  header nav {
+    width: 100%;
+    display: flex;
+  }
+
+  Header ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    justify-content: space-between;
+  }
+
+  figcaption {
+    width: 85%;
+    padding: 0px;
+    margin: 50px 0px;
+  }
+  figcaption h2,
+  figcaption h5,
+  figcaption hr {
+    margin: 20px 0px;
+  }
+  figcaption h2 {
+    width: 80%;
+  }
+}
